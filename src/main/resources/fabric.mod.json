@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "katzencraftmetals",
+	"version": "${version}",
+	"name": "Katzencraft Metals",
+	"description": "Metals!",
+	"authors": [
+		"Chriskatze"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/katzencraftmetals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.chriskatze.katzencraftmetals.KatzencraftMetals"
+		],
+		"fabric-datagen": [
+			"net.chriskatze.katzencraftmetals.KatzencraftMetalsDataGenerator"
+		],
+		"client": [
+			"net.chriskatze.katzencraftmetals.KatzencraftMetalsClient"
+		]
+	},
+	"mixins": [
+		"katzencraftmetals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
