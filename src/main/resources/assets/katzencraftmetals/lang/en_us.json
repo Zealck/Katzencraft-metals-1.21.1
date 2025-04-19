@@ -1,0 +1,15 @@
+{
+  "item.katzencraftmetals.adamantium_raw": "Raw Adamantium",
+  "item.katzencraftmetals.adamantium_nugget": "Adamantium Nugget",
+  "item.katzencraftmetals.adamantium_ingot": "Adamantium Ingot",
+
+  "block.katzencraftmetals.adamantium_block": "Adamantium Block",
+  "block.katzencraftmetals.adamantium_ore": "Adamantium Ore",
+  "block.katzencraftmetals.adamantium_ore_deepslate": "Adamantium Deepslate Ore",
+  "block.katzencraftmetals.adamantium_ore_nether": "Adamantium Nether Ore",
+  "block.katzencraftmetals.adamantium_ore_end": "Adamantium End Ore",
+
+  "item.katzencraftmetals.steel_raw": "Raw Steel",
+  "item.katzencraftmetals.steel_nugget": "Steel Nugget",
+  "item.katzencraftmetals.steel_ingot": "Steel Ingot"
+}
