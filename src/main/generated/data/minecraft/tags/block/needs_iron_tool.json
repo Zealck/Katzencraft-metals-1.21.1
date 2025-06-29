@@ -1,7 +1,23 @@
 {
   "values": [
+    "katzencraftmetals:adamantium_block",
     "katzencraftmetals:adamantium_ore",
     "katzencraftmetals:adamantium_ore_deepslate",
-    "katzencraftmetals:adamantium_ore_nether"
+    "katzencraftmetals:adamantium_ore_nether",
+    "katzencraftmetals:adamantium_ore_end",
+    "katzencraftmetals:mythril_block",
+    "katzencraftmetals:mythril_ore",
+    "katzencraftmetals:mythril_ore_deepslate",
+    "katzencraftmetals:mythril_ore_nether",
+    "katzencraftmetals:mythril_ore_end",
+    "katzencraftmetals:platinum_block",
+    "katzencraftmetals:platinum_ore",
+    "katzencraftmetals:platinum_ore_deepslate",
+    "katzencraftmetals:platinum_ore_nether",
+    "katzencraftmetals:platinum_ore_end",
+    "katzencraftmetals:silver_ore",
+    "katzencraftmetals:silver_ore_deepslate",
+    "katzencraftmetals:silver_ore_nether",
+    "katzencraftmetals:silver_ore_end"
   ]
 }

@@ -29,6 +29,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
         // STANDARD SELF DROPS -----------------------------------------------------------------------------------------
         addDrop(ModBlocks.ADAMANTIUM_BLOCK);
+        addDrop(ModBlocks.MYTHRIL_BLOCK);
+        addDrop(ModBlocks.PLATINUM_BLOCK);
 
         // ORE DROPS ---------------------------------------------------------------------------------------------------
         addDrop(ModBlocks.ADAMANTIUM_ORE, oreDrops(ModBlocks.ADAMANTIUM_ORE, ModItems.ADAMANTIUM_RAW));
@@ -36,6 +38,24 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
                 1, 2));
         addDrop(ModBlocks.ADAMANTIUM_ORE_NETHER, oreDrops(ModBlocks.ADAMANTIUM_ORE_NETHER, ModItems.ADAMANTIUM_RAW));
         addDrop(ModBlocks.ADAMANTIUM_ORE_END, oreDrops(ModBlocks.ADAMANTIUM_ORE_END, ModItems.ADAMANTIUM_RAW));
+
+        addDrop(ModBlocks.MYTHRIL_ORE, oreDrops(ModBlocks.MYTHRIL_ORE, ModItems.MYTHRIL_RAW));
+        addDrop(ModBlocks.MYTHRIL_ORE_DEEPSLATE, multipleOreDrops(ModBlocks.MYTHRIL_ORE_DEEPSLATE, ModItems.MYTHRIL_RAW,
+                1, 2));
+        addDrop(ModBlocks.MYTHRIL_ORE_NETHER, oreDrops(ModBlocks.MYTHRIL_ORE_NETHER, ModItems.MYTHRIL_RAW));
+        addDrop(ModBlocks.MYTHRIL_ORE_END, oreDrops(ModBlocks.MYTHRIL_ORE_END, ModItems.MYTHRIL_RAW));
+
+        addDrop(ModBlocks.PLATINUM_ORE, oreDrops(ModBlocks.PLATINUM_ORE, ModItems.PLATINUM_RAW));
+        addDrop(ModBlocks.PLATINUM_ORE_DEEPSLATE, multipleOreDrops(ModBlocks.PLATINUM_ORE_DEEPSLATE, ModItems.PLATINUM_RAW,
+                1, 2));
+        addDrop(ModBlocks.PLATINUM_ORE_NETHER, oreDrops(ModBlocks.PLATINUM_ORE_NETHER, ModItems.PLATINUM_RAW));
+        addDrop(ModBlocks.PLATINUM_ORE_END, oreDrops(ModBlocks.PLATINUM_ORE_END, ModItems.PLATINUM_RAW));
+
+        addDrop(ModBlocks.SILVER_ORE, oreDrops(ModBlocks.SILVER_ORE, ModItems.SILVER_RAW));
+        addDrop(ModBlocks.SILVER_ORE_DEEPSLATE, multipleOreDrops(ModBlocks.SILVER_ORE_DEEPSLATE, ModItems.SILVER_RAW,
+                1, 2));
+        addDrop(ModBlocks.SILVER_ORE_NETHER, oreDrops(ModBlocks.SILVER_ORE_NETHER, ModItems.SILVER_RAW));
+        addDrop(ModBlocks.SILVER_ORE_END, oreDrops(ModBlocks.SILVER_ORE_END, ModItems.SILVER_RAW));
 
         // |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
     }

@@ -24,6 +24,18 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ADAMANTIUM_ORE_NETHER_KEY = registerKey("adamantium_ore_nether");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ADAMANTIUM_ORE_END_KEY = registerKey("adamantium_ore_end");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHRIL_ORE_KEY = registerKey("mythril_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHRIL_ORE_NETHER_KEY = registerKey("mythril_ore_nether");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHRIL_ORE_END_KEY = registerKey("mythril_ore_end");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PLATINUM_ORE_KEY = registerKey("platinum_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PLATINUM_ORE_NETHER_KEY = registerKey("platinum_ore_nether");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PLATINUM_ORE_END_KEY = registerKey("platinum_ore_end");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = registerKey("silver_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_NETHER_KEY = registerKey("silver_ore_nether");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_END_KEY = registerKey("silver_ore_end");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -38,9 +50,45 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> endAdamantiumOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.ADAMANTIUM_ORE_END.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldMythrilOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.MYTHRIL_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.MYTHRIL_ORE_DEEPSLATE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherMythrilOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.MYTHRIL_ORE_NETHER.getDefaultState()));
+        List<OreFeatureConfig.Target> endmythrilOres =
+                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.MYTHRIL_ORE_END.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldPlatinumOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.PLATINUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.PLATINUM_ORE_DEEPSLATE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherPlatinumOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.PLATINUM_ORE_NETHER.getDefaultState()));
+        List<OreFeatureConfig.Target> endPLatinumOres =
+                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.PLATINUM_ORE_END.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldSilverOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SILVER_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.SILVER_ORE_DEEPSLATE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherSilverOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.SILVER_ORE_NETHER.getDefaultState()));
+        List<OreFeatureConfig.Target> endSilverOres =
+                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.SILVER_ORE_END.getDefaultState()));
+
         register(context, ADAMANTIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldAdamantiumOres,12));
         register(context, ADAMANTIUM_ORE_NETHER_KEY, Feature.ORE, new OreFeatureConfig(netherAdamantiumOres,10));
         register(context, ADAMANTIUM_ORE_END_KEY, Feature.ORE, new OreFeatureConfig(endAdamantiumOres,8));
+
+        register(context, MYTHRIL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMythrilOres,12));
+        register(context, MYTHRIL_ORE_NETHER_KEY, Feature.ORE, new OreFeatureConfig(netherMythrilOres,10));
+        register(context, MYTHRIL_ORE_END_KEY, Feature.ORE, new OreFeatureConfig(endmythrilOres,8));
+
+        register(context, PLATINUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPlatinumOres,12));
+        register(context, PLATINUM_ORE_NETHER_KEY, Feature.ORE, new OreFeatureConfig(netherPlatinumOres,10));
+        register(context, PLATINUM_ORE_END_KEY, Feature.ORE, new OreFeatureConfig(endPLatinumOres,8));
+
+        register(context, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSilverOres,12));
+        register(context, SILVER_ORE_NETHER_KEY, Feature.ORE, new OreFeatureConfig(netherSilverOres,10));
+        register(context, SILVER_ORE_END_KEY, Feature.ORE, new OreFeatureConfig(endSilverOres,8));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

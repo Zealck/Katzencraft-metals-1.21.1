@@ -26,8 +26,9 @@
 		]
 	},
 	"mixins": [
-		"katzencraftmetals.mixins.json"
-	],
+		"katzencraftmetals.mixins.json",
+		"katzencraftmetals.client.mixins.json"
+		],
 	"depends": {
 		"fabricloader": ">=0.16.13",
 		"minecraft": "~1.21.1",

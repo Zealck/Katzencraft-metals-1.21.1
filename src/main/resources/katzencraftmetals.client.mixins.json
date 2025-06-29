@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.chriskatze.katzencraftmetals.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ModMoveLeaveBedButtonMixin",
+    "ModKeepStatusbarInBedMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

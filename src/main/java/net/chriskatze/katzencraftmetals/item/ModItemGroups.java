@@ -17,6 +17,14 @@ public class ModItemGroups {
         entries.add(ModItems.ADAMANTIUM_RAW);
         entries.add(ModItems.ADAMANTIUM_NUGGET);
         entries.add(ModItems.ADAMANTIUM_INGOT);
+
+        entries.add(ModItems.MYTHRIL_RAW);
+        entries.add(ModItems.MYTHRIL_NUGGET);
+        entries.add(ModItems.MYTHRIL_INGOT);
+
+        entries.add(ModItems.PLATINUM_RAW);
+        entries.add(ModItems.PLATINUM_NUGGET);
+        entries.add(ModItems.PLATINUM_INGOT);
     }
 
     private static void Mod_Natural(FabricItemGroupEntries entries) {
@@ -25,6 +33,18 @@ public class ModItemGroups {
         entries.add(ModBlocks.ADAMANTIUM_ORE_DEEPSLATE);
         entries.add(ModBlocks.ADAMANTIUM_ORE_NETHER);
         entries.add(ModBlocks.ADAMANTIUM_ORE_END);
+
+        entries.add(ModBlocks.MYTHRIL_BLOCK);
+        entries.add(ModBlocks.MYTHRIL_ORE);
+        entries.add(ModBlocks.MYTHRIL_ORE_DEEPSLATE);
+        entries.add(ModBlocks.MYTHRIL_ORE_NETHER);
+        entries.add(ModBlocks.MYTHRIL_ORE_END);
+
+        entries.add(ModBlocks.PLATINUM_BLOCK);
+        entries.add(ModBlocks.PLATINUM_ORE);
+        entries.add(ModBlocks.PLATINUM_ORE_DEEPSLATE);
+        entries.add(ModBlocks.PLATINUM_ORE_NETHER);
+        entries.add(ModBlocks.PLATINUM_ORE_END);
     }
 
     private static void Mod_Tools(FabricItemGroupEntries entries) {

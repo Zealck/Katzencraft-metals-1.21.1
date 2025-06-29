@@ -3,7 +3,8 @@
 	"package": "net.chriskatze.katzencraftmetals.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ModPreventNightSkipMixin",
+		"ModHealWhileSleepingMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
