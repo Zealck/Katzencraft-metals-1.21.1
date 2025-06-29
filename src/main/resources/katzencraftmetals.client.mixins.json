@@ -1,12 +1,14 @@
 {
-  "required": true,
-  "package": "net.chriskatze.katzencraftmetals.mixin.client",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "ModMoveLeaveBedButtonMixin",
-    "ModKeepStatusbarInBedMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+	"required": true,
+	"package": "net.chriskatze.katzencraftmetals.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ModPreventNightSkipMixin",
+		"ModHealWhileSleepingMixin",
+		"AllowDaySleepMixin",
+		"AllowDaySleepBedBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
 }
